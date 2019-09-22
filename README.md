@@ -1,3 +1,5 @@
+*The bikeshare folder includes the jupyter notebook and slides. Also a pdf describing some graphs used for exploring the data.*
+
 # Ford-Go-Bike-Systems
 The dataset in this repository was retrieved from https://lyft.com/bikes/bay-wheels/system-data for all the files in the year of 2018.
 Lyft's bikeshare system is currently based in San Francisco County, Alameda County, and Santa Clara County.
@@ -5,7 +7,7 @@ Lyft's bikeshare system is currently based in San Francisco County, Alameda Coun
 ## The Pricing
 Lyft's bike share system offers three different types of pricing.
 A **single ride** costs $2 for one ride up to 30 minutes. However, after 30 minutes it costs an extra 3$ per additional 15 minutes.
-There is also a **monthly membership** available. For just $15 a month a member can ride 45 minute trips, however after 45 minutes there is an extra $3 per additional 15 minutes.
+There is also a **monthly membership** available. For just $15 a month a member can ride unlimited 45 minute trips, however after 45 minutes there is an extra $3 per additional 15 minutes.
 If a monthly wasn't enough there is a **annual membership**, where riders can pay $149 for the whole year. Like the monthly membership there is a limit of 45 minutes per trip and an additional $3 per extra 15 minutes after the initial 45 minutes.
 
 ## So how can we increase revenue?
@@ -44,6 +46,9 @@ Before diving right in and exploring the impact of the many features on the dura
 So now we can start answering some questions. What patterns can we see when exploring the duration of trips against other features?
 When looking at the duration of trips with the age of the users it was found out most of the users rode for under 200 minutes. However there were many people around 40 years and younger who also rode above 200 minutes. There weren't that many older people or those under 70 that rode for over 200 minutes, except for 1 outlier. Interestingly, when looking at the age vs subscriber it was found out that most users that were not subscribers were 33 years old. Which means that maybe the users that were not subscribers tended to use 1985 as their fake birth year. When looking at the duration of trip vs the month, users rode less on the month of november and december. Interestly duration of trip during october was also low, however when looking at just the frequency of the month, many people rode during october. When looking at the duration vs the county. The duration of the trips for each county was similar, with the averages being between 13.5 -14.5 minutes.
 
+## Combining Features
+The duration of the trips on the month/gender was explored. However, it was noted that both genders followed a similar pattern in the duration of trips, Where duration seemed to higher in the hotter months and lower in the colder months. However, interestingly for females the duration of trips in february was rather high. The average duration of trips on the subscription status/age was also found. Age was categorized into two, old and young, with young being anyone under 55 years old. Both the age groups were similar in average duration of trips. The duration of trips and the month/subscription status was also explored. Overall, many non-subscribers rode for longer durations throughout the months. Subscribers rode mostly shorter durations under 200 minutes. Subscribers also rode for longer periods during the warmer months (May, June, July, August).
 
-## Duration vs More Features
-
+## So what now?
+We should target advertisements to females, because females ride for longer than males.
+We should also start advertisements during the summer, or specifically July, as the number of users is high during july and the average trip is also high. We should also target non-subscribers, or maybe increase the membership fees. Members tend to ride for short periods as they seem to take advantage of their unlimited rides. 
